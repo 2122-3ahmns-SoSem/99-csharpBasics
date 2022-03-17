@@ -12,7 +12,7 @@ public class Variablen : MonoBehaviour
 {
     public GameObject x;
     Color farbe;
-    int anzTueren = 4;
+    int anzTuerenInstanz = 4;
     bool fahren;
 
     // Start is called before the first frame update
@@ -33,8 +33,14 @@ public class Variablen : MonoBehaviour
         Debug.Log("White " + farbe.ToString());
 
         Debug.Log(x.ToString());
-        Debug.Log(anzTueren.ToString());
+        Debug.Log(anzTuerenInstanz.ToString());//nimm instanz
         Debug.Log("bool fahren " + fahren.ToString());
+
+        //Lokal schlägt Instanz
+        int anzTueren = int.Parse("4");
+        float anzTuerenf = float.Parse("4");
+
+        Debug.Log(anzTueren + " " + anzTuerenf + " " + anzTuerenInstanz);
 
     }
 
